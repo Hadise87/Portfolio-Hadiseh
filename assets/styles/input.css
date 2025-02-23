@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c2a4a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.exp1:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.line {
+  width: 3.5rem;
+  background-color: #9ca3af;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-item a:hover .line {
+  width: 6rem;
+  background-color: white;
+}
+
+.nav-item a:hover .text {
+  color: white;
+}
+
+.nav-item a.active .line {
+  width: 6rem;
+  background-color: white;
+}
+
+.nav-item a.active .text {
+  color: white;
+}
+
+.light-mode .nav-item a:hover .line {
+  width: 6rem;
+  background-color: #1f2937;
+}
+
+.light-mode .nav-item a:hover .text {
+  color: #1f2937;
+}
+
+.light-mode .nav-item a.active .line {
+  width: 6rem;
+  background-color: #1f2937;
+}
+
+.light-mode .nav-item a.active .text {
+  color: #1f2937;
+}
+
+.experiences {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 70px;
+}
+.first-project > img {
+  width: 30%;
+}
+
+.contact-message {
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+body.light-mode {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+h3.light-mode {
+  color: #1f2937;
+}
+
+header.light-mode {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.light-mode {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+button.light-mode:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+body.light-mode button {
+  background-color: #ffffff;
+  border: 1px solid #3f4349;
+  color: #1f2937;
+}
+
+body.light-mode button:hover {
+  background-color: #f3f4f6;
+  border-color: #374151;
+}
+
+body.light-mode .line {
+  background-color: #8e9195;
+}
+
+body.light-mode .nav-item:hover .line {
+  background-color: #23272e;
+}
+
+body.light-mode .nav-item a.active .line {
+  background-color: #23272e;
+}
+
+h3.light-mode {
+  color: #1f2937;
+}
+body.light-mode .fa-brands {
+  color: #1f2937; /* Dark text color for visibility */
+}
+
+body.light-mode .fa-brands:hover {
+  color: #4b5563; /* Slightly lighter hover effect */
+}
+
+
+.tag-skill {
+  @apply inline-block bg-white rounded-md text-black text-sm px-2 py-1 font-semibold;
+}
+
+
+
+
+
+
+
+/* ========== Light Mode Styling for Yarn and Darn Page ========== */
+
+/* General Light Mode */
+body.light-mode {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* Light Mode - Header */
+body.light-mode header {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode - Navigation Button */
+body.light-mode #toggleMode {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+body.light-mode #toggleMode:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+/* Light Mode - Hero Banner */
+body.light-mode .text-gray-900 {
+  color: #1f2937 !important;
+}
+
+body.light-mode .text-orange-600 {
+  color: #c2410c;
+}
+
+body.light-mode .text-gray-500 {
+  color: #6b7280;
+}
+
+/* Light Mode - About Section */
+body.light-mode .bg-gray-900 {
+  background-color: #e5e7eb !important;
+  color: #1f2937;
+}
+
+/* Light Mode - Problem & Solution Section */
+body.light-mode .bg-[#eed9af] {
+  background-color: #fdf6e3 !important;
+  color: #1f2937;
+}
+
+body.light-mode .text-gray-700 {
+  color: #374151;
+}
+
+/* Light Mode - UI Layout Section */
+body.light-mode .bg-white {
+  background-color: #ffffff !important;
+  color: #1f2937;
+}
+
+/* Light Mode - Wireframes Section */
+body.light-mode .bg-white.text-black {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Light Mode - Sketches Section */
+body.light-mode .bg-gray-900 {
+  background-color: #f3f4f6 !important;
+  color: #1f2937;
+}
+
+/* Light Mode - Style Guide */
+body.light-mode .bg-gray-800 {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+body.light-mode .text-gray-100 {
+  color: #1f2937;
+}
+
+/* Light Mode - Icons */
+body.light-mode .fa-brands {
+  color: #1f2937;
+}
+
+body.light-mode .fa-brands:hover {
+  color: #4b5563;
+}
+
+/* Light Mode - Borders */
+body.light-mode .border-zinc-50 {
+  border-color: #d1d5db !important;
+}
+
+/* Light Mode - Tags (Skills) */
+body.light-mode .tag-skill {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Light Mode - Image Shadows */
+body.light-mode .shadow-xl {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode - Footer */
+body.light-mode footer {
+  background-color: #ffffff;
+  color: #1f2937;
+}
