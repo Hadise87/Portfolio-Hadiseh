@@ -205,7 +205,7 @@ body.light-mode .bg-gray-900 {
 }
 
 /* Light Mode - Problem & Solution Section */
-body.light-mode .bg-[#eed9af] {
+body.light-mode  {
   background-color: #fdf6e3 !important;
   color: #1f2937;
 }
